@@ -1,0 +1,279 @@
+body{
+    font-family: 'Source Sans Pro',sans-serif; /* Tipo de fuente*/
+    margin: 0px;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal; /* Peso de fuente : Negrita, normal, etc.*/
+    /*font-style: italic; Estilo de fuente*/
+}
+h1{
+
+    font-size: 40px; /*Tamaño de Fuente*/
+    line-height: 1.5; /* Salto de Linea*/
+    letter-spacing: -.2px; /*Espacio entre letras*/
+    color: white;
+    margin: 0;
+    /*text-transform: uppercase; Transformar texto: mayusculas, minusculas.
+    text-decoration: dashed; Decoracion del Texto*/
+}
+h1 strong{
+    color: #026fff;
+}
+h2 {
+    color: #026fff;
+    text-transform: uppercase; /*Colocar texto en mayuscula*/
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; /*Estilos de una Lista*/
+}
+figure{
+    margin: 0;
+}
+.hero{
+    height: 300px;
+    /*background-image: url('../images/hero.jpg'); Imagen de fondo*/
+    background-color: #1b2127;
+    /*background-size: 500px 300px; /*Tamaño imagen*/
+    /*background-repeat: no-repeat; /*Que no se repita la imagen de fondo*/
+    /*background-position-x: right; /*Mover la imagen en eje x*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 20px;
+
+}
+.project{
+/*border-top: 10px solid red;
+border-right: 10px solid green;
+border-left: 10px solid orange;
+border-bottom: 10px solid pink;
+border-color: red;
+border-width: 2px;
+border-style: solid;*/
+border: 1px solid gray; /* Caja tipo solida*/
+border-radius: 10px; /*esquinas redondeadas*/
+/*margin: 10px;  Espacio externo*/
+margin-bottom: 15px;
+padding: 20px; /* Espacio interno*/
+background-color: white;
+box-sizing: border-box; /*Mantiene siempre el mismo tamaño que le indique con width y height sin importar margin y padding*/
+display: flex; /*Indica como debe ser mostrado un elemento en Html*/
+align-items: center;
+justify-content: space-between;
+
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-course{
+    margin: 10px 0;
+}
+.project-date{
+    margin: 10px 0;
+}
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-details{
+    width: 500px;
+   
+    
+}
+.project-imageContainer{
+    width: 500px;
+    
+
+}
+.header{
+    background-color: #1b2127; /*Color de Fondo*/
+    color: white; /* Color letras*/ 
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.menu{
+    height: inherit; /* Hereda la propiedad de su padre*/
+}
+.header ol{
+    display:flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header a{
+    color: white; /*Color a letra de los enlaces*/
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+/*
+.flexbox{
+    height: 200px;
+    display: flex; /*Display flexible en tamaño y ubicacion
+    flex-wrap: wrap; /*Cuandop un elemento no quepa en el eje x, hacen salto de linea
+    justify-content: center; /* Alineaciones de Manera Horizontal del flex
+    align-items: center; /* Alineaciones de manera Vertical en el flex
+    /*flex-direction: column; Direccion de elementos
+}
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0; /*Capacidad de enconger, entre 0 y 1
+    align-self: flex-start; /* para colocar un solo elemento
+}*/
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.footer img{
+    vertical-align:middle ; /*Centrar imagen del footer*/
+}
+.footer a{
+    color: white;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.event-list-title{
+    margin-left: 20px;
+}
+.event{
+    
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+    
+    
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /*Agregar imagen bien segun las dimensiones dadas*/
+}
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-description{
+    text-align: left;
+}
+.event a{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/*.social{
+    
+}*/
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+
+}
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+    background-size: 50px 50px;
+}
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+    background-size: 50px 50px;
+}
+.social-link.github{
+    background-image: url('../images/github.svg');
+    background-size: 50px 50px;
+}
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+    background-size: 50px 50px;
+}
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    border-radius: 5px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px 0;
+    margin-top: 10px;
+
+}
+.form-email h3{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.container{
+    
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}

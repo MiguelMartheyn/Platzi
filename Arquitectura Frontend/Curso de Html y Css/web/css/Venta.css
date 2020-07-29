@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.container_venta{
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.row_venta{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.col-1_venta{
+    width: 8.333333333%;
+}
+.col-2_venta{
+    width: 16.66666667%;
+}
+.col-3_venta{
+    width: 25%;
+}
+.col-4_venta{
+    width: 33.33333333%; 
+}
+
+.col-5_venta{
+    width: 41.66666667%;
+}
+.col-6_venta{
+    width: 50%;
+}
+.col-7_venta{
+    width: 58.33333333%;
+}
+.col-8_venta{
+    width: 66.66666667%;
+    
+}
+
+.col-9_venta{
+    width: 75%;
+}
+.col-10_venta{
+    width: 83.33333333%;
+}
+.col-11_venta{
+    width: 91.66666667%;
+}
+.col-12_venta{
+    width: 100%;
+}
+.col-1_venta,.col-2_venta,.col-3_venta,.col-4_venta,.col-5_venta,.col-6_venta,.col-7_venta,.col-8_venta,.col-9_venta,.col-10_venta,.col-11_venta,.col-12_venta{
+    padding: 10px;
+}
+@media(max-width: 900px){
+    .row_venta{
+       display: inherit; 
+    }
+
+    .col-1_venta,.col-2_venta,.col-3_venta,.col-4_venta,.col-5_venta,.col-6_venta,.col-7_venta,.col-8_venta,.col-9_venta,.col-10_venta,.col-11_venta,.col-12_venta{
+        width: 100%;
+    }
+}
