@@ -2,22 +2,20 @@ import java.util.ArrayList;
 import java.util.Date;
 
 //Identidad
-public class Doctor {
+public class Doctor extends User {
     //Atributos
-    int id = 0;//Auto Increment con metodo static
-    static int contador = 0;//Auto Increment con metodo static
-    private String name;
     private String speciality;
-    private String email;
 
+    Doctor(String name, String email){
+        super(name,email);
+    }
 
+    public String getSpeciality() {
+        return speciality;
+    }
 
-    Doctor(String name, String speciality){
-        this.name = name;
+    public void setSpeciality(String speciality) {
         this.speciality = speciality;
-        contador++;
-        id = contador;
-
     }
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
