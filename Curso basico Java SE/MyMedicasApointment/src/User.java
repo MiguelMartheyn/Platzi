@@ -5,9 +5,9 @@ public class User {
     private String phoneNumber;
     private String email;
 
-    public User(String name, String address) {
+    public User(String name, String email) {
         this.name = name;
-        this.address = address;
+        this.email = email;
     }
 
     public int getId() {
@@ -52,5 +52,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "name = " + name + '\n' +
+                "email = " + email + '\n' +
+                "phoneNumber = " + phoneNumber + '\n' +
+                "address = " + address + '\n';
     }
 }

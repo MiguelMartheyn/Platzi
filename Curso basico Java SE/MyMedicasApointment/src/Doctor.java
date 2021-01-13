@@ -28,6 +28,14 @@ public class Doctor extends User {
         return availableAppointments;
     }
 
+    @Override
+    public String toString() {
+        return "Doctor{" + '\n' + super.toString() +
+                "speciality = " + speciality + '\n' +
+                "Available Appointments{"  + availableAppointments.toString() + '\n' +
+                '}';
+    }
+
     /* Clase Aninada static. Se crea en Doctor ya que este
     es el unico que generara citas, al ser el unico que comparte
     informacion con esta se procede con la creacion de clase anidada.
@@ -66,6 +74,14 @@ public class Doctor extends User {
 
         public void setTime(String time) {
             this.time = time;
+        }
+
+        @Override
+        public String toString() {
+            return  '\n' + "{" +
+                    "date = " + date + '\n' +
+                    "time = " + time + '\n' +
+                    '}';
         }
     }
 }

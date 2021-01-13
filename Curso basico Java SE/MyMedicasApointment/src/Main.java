@@ -1,3 +1,4 @@
+import javax.jws.soap.SOAPBinding;
 import java.util.Date;
 
 import static ui.UIMenu.*;
@@ -25,17 +26,21 @@ public class Main {
         Patient myPatient = new Patient("Miguel Martheyn","miguel.martheyn@globant.com");
          */
 
-        Doctor myDoctor = new Doctor("Anahi Salgado", "Pediatria");
+        Doctor myDoctor = new Doctor("Anahi Salgado", "anahi@anahi.com");
         myDoctor.addAvailableAppointment(new Date(),"4pm");
         myDoctor.addAvailableAppointment(new Date(),"10am");
         myDoctor.addAvailableAppointment(new Date(),"1pm");
 
-        for (Doctor.AvailableAppointment aA:myDoctor.getAvailableAppointments()
+       /* for (Doctor.AvailableAppointment aA:myDoctor.getAvailableAppointments()
              ) {
             System.out.println(aA.getDate() + " "+ aA.getTime());
         }
-
+*/
         Patient patient = new Patient("Alejandra","alejandra@gmail.com");
+
+        System.out.println(patient);
+        System.out.println("");
+        System.out.println(myDoctor);
 
        // showMenu(); // Entra a la clase ui.UIMenu y me trae el metodo showMenu()
     }
