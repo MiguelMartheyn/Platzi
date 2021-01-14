@@ -170,10 +170,47 @@ public class MenuRestaurnt {
                     case 5:
                         System.out.println("----------------------------");
                         System.out.println("\t\t\t\tMake a dish \n");
+                        for (Dish aA: myRestaurant.getDishes()
+                        ) {
+                            System.out.println("\n"+i+".Plato: " + aA.getName());
+                            i++;
+                        }
+                        System.out.println("\nSelect the number of Dish type you want:");
+                        index = scPr.nextInt();
+                        i=1;
+                        for (IngredientAmmount aA: myRestaurant.getIngredients()
+                        ) {
+                            if (i == index) {
+                                aA.setAmmount(aA.getAmmount() -1);
+                            } else {
+                                i++;
+                            }
+                        }
+                        System.out.println("The Dish is ready");
+                        index = 0;
+                        i=1;
                         break;
                     case 6:
                         System.out.println("----------------------------");
                         System.out.println("\t\t\t\tSell a dish \n");
+
+                        for (Dish aA: myRestaurant.getDishes()
+                        ) {
+                            System.out.println("\n"+i+".Plato: " + aA.getName());
+                            i++;
+                        }
+                        System.out.println("\nSelect the number of Dish type you want:");
+                        index = scPr.nextInt();
+                        i=1;
+                        for (Dish aA: myRestaurant.getDishes()
+                        ) {
+                            if (i == index) {
+                                System.out.println("The Dish " + aA.getName() +" was sell");;
+                            }
+                            i++;
+                        }
+                        index = 0;
+                        i=1;
                         break;
                     case 0:
                         System.out.println("----------------------------");
